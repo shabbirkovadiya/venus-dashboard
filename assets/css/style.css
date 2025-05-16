@@ -1,0 +1,122 @@
+@import url(mediaqueries.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* =====  Font Family  ===== */
+
+@font-face {
+  font-family: "dms-thin";
+  src: url(../fonts/DM_Sans/DMSans-Thin.ttf);
+
+  /*?  Font Weight 100  ?*/
+}
+
+
+@font-face {
+  font-family: "dms-extralight";
+  src: url(../fonts/DM_Sans/DMSans-ExtraLight.ttf);
+
+  /*?  Font Weight 200  ?*/
+}
+
+@font-face {
+  font-family: "dms-light";
+  src: url(../fonts/DM_Sans/DMSans-Light.ttf);
+
+  /*?  Font Weight 300  ?*/
+}
+
+@font-face {
+  font-family: "dms-regular";
+  src: url(../fonts/DM_Sans/DMSans-Regular.ttf);
+
+  /*?  Font Weight 400  ?*/
+}
+
+@font-face {
+  font-family: "dms-medium";
+  src: url(../fonts/DM_Sans/DMSans-Medium.ttf);
+
+  /*?  Font Weight 500  ?*/
+}
+
+@font-face {
+  font-family: "dms-semibold";
+  src: url(../fonts/DM_Sans/DMSans-SemiBold.ttf);
+
+  /*?  Font Weight 600  ?*/
+}
+
+@font-face {
+  font-family: "dms-bold";
+  src: url(../fonts/DM_Sans/DMSans-Bold.ttf);
+
+  /*?  Font Weight 700  ?*/
+}
+@font-face {
+  font-family: "dms-extrabold";
+  src: url(../fonts/DM_Sans/DMSans-ExtraBold.ttf);
+
+  /*?  Font Weight 800  ?*/
+}
+
+
+
+/* =====  Root Variables  ===== */
+
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --primary-gradient:linear-gradient(135deg, #868CFF 0%, #4318FF 100%);
+  --primary-color:#4318FF;
+  --light-green:#05CD99;
+  --red:#E31A1A;
+  --grey500:#8F9BBA;
+  --grey600:#A3AED0;
+  --grey700:#707EAE;
+  --grey900:#1B3674;
+}
+
+
+
+
+
+/* =====  Start  Section  ===== */
+
+
+
+/* =====  End  Section  ===== */
+
+
+
+
+
+/* =====  End Media Queries Section  ===== */
+
+
+/* =====  Start Scrollbar Section  ===== */
+
+/* ::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: ;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: ;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: ;
+} */
+
+/* =====  End Scrollbar Section  ===== */
+
