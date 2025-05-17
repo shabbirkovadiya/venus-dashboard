@@ -1,11 +1,11 @@
 @import url(mediaqueries.css);
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
-
-
 
 /* =====  Font Family  ===== */
 
@@ -15,7 +15,6 @@
 
   /*?  Font Weight 100  ?*/
 }
-
 
 @font-face {
   font-family: "dms-extralight";
@@ -65,41 +64,101 @@
   /*?  Font Weight 800  ?*/
 }
 
-
-
 /* =====  Root Variables  ===== */
 
 :root {
   --white-color: #fff;
   --black-color: #000;
-  --primary-gradient:linear-gradient(135deg, #868CFF 0%, #4318FF 100%);
-  --primary-color:#4318FF;
-  --light-green:#05CD99;
-  --red:#E31A1A;
-  --grey500:#8F9BBA;
-  --grey600:#A3AED0;
-  --grey700:#707EAE;
-  --grey900:#1B3674;
+  --primary-gradient: linear-gradient(135deg, #868cff 0%, #4318ff 100%);
+  --primary-color: #4318ff;
+  --light-green: #05cd99;
+  --red: #e31a1a;
+  --grey300:#F4F7FE;
+  --grey500: #8f9bba;
+  --grey600: #a3aed0;
+  --grey700: #707eae;
+  --grey900: #1b3674;
 }
 
+/* =====SideBAr  Start  Section  ===== */
+.side-bar {
+  height: 100vh;
+  padding: 0;
+  position: relative;
+  background-color: var(--white-color);
+}
+.side-bar .logo{
+  padding: 45px 35px 35px 25px;
+  border-bottom:2px solid var(--grey300);
 
+}
+.side-bar .logo img {
+  width: 143px;
+  height: 44px;
+}
+.sidebar-nav {
+  padding-left: 35px;
+  padding-right: 35px;
+  flex: auto;
+}
+.sidebar-nav .nav-link{
+  padding: 10px;
+  border-radius: 5px;
+  gap: 14px;
+  color:var(--grey600);
+  background-color: none;
+  margin-bottom: 15px;
+  width: 100%;
+font-size: 16px;
+font-family: "dms-medium";
+cursor: pointer;
+transition: .3s ease-in-out ;
+ white-space: normal;           /* allow wrapping */
+  word-break: break-word;        /* break long words if needed */
+  overflow-wrap: anywhere;       /* handle unbreakable content */ 
+&:hover{
+  color: rgb(72, 70, 70);
+}
+ 
+}
+.sidebar-nav .active{
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+.side-bar .icon{
+  fill:currentColor;
+   width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.logout{
+ gap: 14px;
+padding: 10px;
+position: fixed;
+left: 20px;
+bottom: 20px;
+color: var(--grey600);
+font-size: 16px;
+font-family: "dms-medium";
+cursor: pointer;
+transition: .3s ease-in-out ;
+&:hover{
+  color: rgb(72, 70, 70);
+}
+}
+/* =====SideBar  Section  End ===== */
 
+/* ===== MAin   Section  End ===== */
 
+#menuBar{
+  transform: rotate(90deg);
+  font-size: 20px;
+  border: none;
+  background-color: transparent !important;
+}
 
-/* =====  Start  Section  ===== */
+/* =====MAin  Section  End ===== */
 
-
-
-/* =====  End  Section  ===== */
-
-
-
-
-
-/* =====  End Media Queries Section  ===== */
-
-
-/* =====  Start Scrollbar Section  ===== */
 
 /* ::-webkit-scrollbar {
   width: 1rem;
@@ -120,3 +179,5 @@
 
 /* =====  End Scrollbar Section  ===== */
 
+
+/* Animations  */
