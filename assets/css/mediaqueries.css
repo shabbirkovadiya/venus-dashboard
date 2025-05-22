@@ -47,6 +47,68 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .greeting p{
+font-size: 14px !important;
+}
+.greeting h1{
+font-size: 27px !important;
+}
+
+.search-input {
+    height: 40px !important;
+    padding-left: 40px !important;
+    flex: auto !important;
+    width: auto !important;
+  }
+.search-input::placeholder{
+font-size: 14px !important;
+}
+
+.search-icon {
+  height: 13px;
+  width: 13px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-40%);
+    color: #888;
+}
+/* ==main layout==  */
+.small-data{
+  padding: 10px 15px;
+  flex-direction: column;
+  align-items: start !important;
+}
+.small-data p{
+font-size: 12px !important;
+}
+.small-data h5{
+font-size: 22px !important;
+}
+
+.customer-icon-div{
+width: 45px !important;
+height: 45px !important;
+}
+.new-clients p{
+font-size: 14px !important;
+}
+.new-clients h6{
+font-size: 16px !important;
+}
+.new-clients .graph-img{
+  top: 50%;
+  transform: translateY(-60%);
+}
+.earning-icon-div{
+width: 45px !important;
+height: 45px !important;
+}
+
+.activity p{
+font-size: 14px !important;
+}
+
   /*?  768px to 992px   md :- (Tablets and small desktops)  ?*/
 }
 
@@ -73,6 +135,12 @@
   .sidebar-nav .nav-link {
     gap: 8px !important;
   }
+    .greeting p{
+font-size: 12px !important;
+}
+.greeting h1{
+font-size: 23px !important;
+}
   /*?  B - 576px to 768px   sm :- (Landscape and Portrait mobiles)  ?*/
 }
 
