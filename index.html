@@ -9,7 +9,7 @@
     <!-- offline fontawsome css  -->
     <link rel="stylesheet" href="assets/fonts/fontawsome/all.min.css" />
     <!-- ChartJS CDN Link  -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!-- custom css  -->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -167,7 +167,10 @@
         <!-- sideBar End Here  -->
         <!-- main div start Here  -->
 
-        <div class="col-12 col-lg-10 hero-main" style="background-color: #f4f7fe;">
+        <div
+          class="col-12 col-lg-10 hero-main"
+          style="background-color: #f4f7fe"
+        >
           <div
             class="heading d-flex align-items-center justify-content-between"
           >
@@ -256,31 +259,42 @@
           <div class="main-layout pt-3">
             <!-- first row of details  -->
             <div class="row m-0 p-0">
-              <div class="col-6 col-md-3  mb-3">
-                <div class="spent-this-month small-data justify-content-between gap-2 active-main">
+              <div class="col-6 col-md-3 mb-3">
+                <div
+                  class="spent-this-month small-data justify-content-between gap-2"
+                  id="spentThisMonth"
+                >
                   <div>
                     <p>Spent this month</p>
                     <h5>$682.5</h5>
                   </div>
-                  <img src="assets/images/spentGraphimg.svg" alt="">
+                  <img src="assets/images/spentGraphimg.svg" alt="" />
                 </div>
               </div>
               <div class="col-6 col-md-3 mb-3">
-                <div class="small-data gap-3 new-clients">
-                  <div class="customer-icon-div d-flex justify-content-center align-items-center">
-                    <img src="assets/images/newClientsIcon.svg" alt="">
+                <div class="small-data gap-3 new-clients" id="newClients">
+                  <div
+                    class="customer-icon-div d-flex justify-content-center align-items-center"
+                  >
+                    <img src="assets/images/newClientsIcon.svg" alt="" />
                   </div>
                   <div>
                     <p>New Clients</p>
                     <h6>321</h6>
                   </div>
-                  <img src="assets/images/newClientGraph.svg" alt="" class="graph-img">
+                  <img
+                    src="assets/images/newClientGraph.svg"
+                    alt=""
+                    class="graph-img"
+                  />
                 </div>
               </div>
               <div class="col-6 col-md-3 mb-3">
-                <div class="small-data gap-3 earning">
-                  <div class="earning-icon-div d-flex justify-content-center align-items-center">
-                    <img src="assets/images/barChart.svg" alt="">
+                <div class="small-data gap-3 earning" id="earning">
+                  <div
+                    class="earning-icon-div d-flex justify-content-center align-items-center"
+                  >
+                    <img src="assets/images/barChart.svg" alt="" />
                   </div>
                   <div>
                     <p>Earnings</p>
@@ -289,160 +303,376 @@
                 </div>
               </div>
               <div class="col-6 col-md-3 mb-3">
-                  <div class="activity small-data justify-content-between gap-2">
+                <div
+                  class="activity small-data justify-content-between gap-2 active-main"
+                  id="activity"
+                >
                   <div>
                     <p>Activity</p>
                     <h5>$540.50</h5>
                   </div>
-                 <img src="assets/images/activityChart.svg" alt="">
+                  <img src="assets/images/activityChart.svg" alt="" />
                 </div>
               </div>
             </div>
 
-         <!-- ---   main tab content 1 --- -->
-          <div class="main-tab-1" id="mainTabOne">
-            <div class="row p-0 m-0">
-              <div class="col-md-8 col-12 mb-3">
-                <div class="total-spent-chart">
-                   <div class="header d-flex justify-content-between align-items-center">
-      <div>
-        <p>Total Spent</p>
-        <h5>$682.5</h5> <!-- STATIC -->
-      </div>
-      <button>
-<img src="assets/images/barChart.svg" alt="">
-      </button>
-    </div>
-    <!-- spendingChart  -->
-    <canvas id="spendingChart" style="max-height: 190px;"></canvas>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 mb-3 ">
-                <div class="p-2 profile-card">
-                  <div class="pfp"><img src="assets/images/userpfp.png" alt=""></div>
-                  <div>
-                    <h3 class="user-name text-center mb-0">Charles Robbie</h3>
-                    <p class="address mb-0 text-center"><img src="assets/images/locationIcon.svg" alt="" class="me-2">New York, USA</p>
-                  </div>
-                  <div class="user-details d-flex align-items-center justify-content-center gap-4 flex-wrap">
-                    <div class="text-center">
-                      <p class="mb-0">Projects</p>
-                      <h6>28</h6>
+            <!-- ---   main tab content 1 --- -->
+            <div class="main-tab-1" id="SpentMonthTab">
+              <div class="row p-0 m-0">
+                <div class="col-md-8 col-12 mb-3">
+                  <div class="total-spent-chart">
+                    <div
+                      class="header d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <p>Total Spent</p>
+                        <h5>$682.5</h5>
+                        <!-- STATIC -->
+                      </div>
+                      <button>
+                        <img src="assets/images/barChart.svg" alt="" />
+                      </button>
                     </div>
-                    <div class="text-center">
-                      <p class="mb-0">Projects</p>
-                      <h6>28</h6>
-                    </div>
-                    <div class="text-center">
-                      <p class="mb-0">Projects</p>
-                      <h6>28</h6>
-                    </div>
+                    <!-- spendingChart  -->
+                    <canvas
+                      id="spendingChart"
+                      style="max-height: 190px"
+                    ></canvas>
                   </div>
                 </div>
-              </div>
-                <div class="col-12 col-md-4 mb-3 ">
-               <div class="spend-month-card d-flex flex-column justify-content-between">
-                <div class="d-flex justify-content-between align-items-center">
-<div class="mb-3">
-  <p class="mb-0">Spent this month</p>
-    <h2 class="mb-0">$682.5</h2>
-    <span class="status-text d-flex align-items-center justify-content-center gap-2"><img src="assets/images/greenTick.svg" alt=""> On track</span>
-</div>
-    <span class="gain-or-loss">▲ +2.45%</span>
+                <div class="col-12 col-md-4 mb-3">
+                  <div class="p-2 profile-card">
+                    <div class="pfp">
+                      <img src="assets/images/userpfp.png" alt="" />
+                    </div>
+                    <div>
+                      <h3 class="user-name text-center mb-0">Charles Robbie</h3>
+                      <p class="address mb-0 text-center">
+                        <img
+                          src="assets/images/locationIcon.svg"
+                          alt=""
+                          class="me-2"
+                        />New York, USA
+                      </p>
+                    </div>
+                    <div
+                      class="user-details d-flex align-items-center justify-content-center gap-4 flex-wrap"
+                    >
+                      <div class="text-center">
+                        <p class="mb-0">Projects</p>
+                        <h6>28</h6>
+                      </div>
+                      <div class="text-center">
+                        <p class="mb-0">Projects</p>
+                        <h6>28</h6>
+                      </div>
+                      <div class="text-center">
+                        <p class="mb-0">Projects</p>
+                        <h6>28</h6>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-    
-<!-- ------- spend-This Month Chart ----------  -->
-    <canvas id="spendMonthChart" class="w-100"></canvas>
-  </div>
-              </div>
-                <div class="col-12 col-md-4 mb-3 ">
+                <div class="col-12 col-md-4 mb-3">
+                  <div
+                    class="spend-month-card d-flex flex-column justify-content-between"
+                  >
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="mb-3">
+                        <p class="mb-0">Spent this month</p>
+                        <h2 class="mb-0">$682.5</h2>
+                        <span
+                          class="status-text d-flex align-items-center justify-content-center gap-2"
+                          ><img src="assets/images/greenTick.svg" alt="" /> On
+                          track</span
+                        >
+                      </div>
+                      <span class="gain-or-loss">▲ +2.45%</span>
+                    </div>
+
+                    <!-- ------- spend-This Month Chart ----------  -->
+                    <canvas id="spendMonthChart" class="w-100"></canvas>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
                   <div class="transactions-card">
                     <h5 class="heading">Your transactions</h5>
                     <div class="transactions-list">
                       <div class="d-flex align-items-center gap-3">
-                       <div class="transaction-logo"><img src="assets/images/bus.svg" alt=""></div>
+                        <div class="transaction-logo">
+                          <img src="assets/images/bus.svg" alt="" />
+                        </div>
                         <div>
                           <h6 id="transaction-title">Public Transport</h6>
                           <p id="transaction-time">22 September 2020</p>
                         </div>
                       </div>
                       <div class="d-flex align-items-center gap-3">
-                       <div class="transaction-logo"><img src="assets/images/groceryStore.svg" alt=""></div>
+                        <div class="transaction-logo">
+                          <img src="assets/images/groceryStore.svg" alt="" />
+                        </div>
                         <div>
                           <h6 id="transaction-title">Grocery Store</h6>
                           <p id="transaction-time">18 September 2020</p>
                         </div>
                       </div>
                       <div class="d-flex align-items-center gap-3">
-                       <div class="transaction-logo"><img src="assets/images/subscriptions.svg" alt=""></div>
+                        <div class="transaction-logo">
+                          <img src="assets/images/subscriptions.svg" alt="" />
+                        </div>
                         <div>
                           <h6 id="transaction-title">Public Transport</h6>
                           <p id="transaction-time">22 September 2020</p>
                         </div>
                       </div>
-
+                    </div>
+                    <div class="text-end">
+                      <a href="#" class="transaction-viewmore text-end">
+                        <span class="mb-0 me-2">View all</span>
+                        <img src="assets/images/viewmoreArrow.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div class="text-end"><a href="#" class="transaction-viewmore text-end">
-                  <span class="mb-0 me-2">View all</span>
-                  <img src="assets/images/viewmoreArrow.png" alt="">
-                </a></div>
-            </div>
-</div>
-  <div class="col-12 col-md-4 mb-3 ">
+                <div class="col-12 col-md-4 mb-3">
                   <div class="transactions-card tasks-card">
                     <h2 class="heading">27 May</h2>
                     <div class="transactions-list tasks-list">
                       <div class="d-flex align-items-center gap-3">
-                       <div class="task-left-border"></div>
+                        <div class="task-left-border"></div>
                         <div>
                           <h6 id="transaction-title">Meet w/ Simmmple</h6>
                           <p id="transaction-time">01:00 PM - 02:00 PM</p>
                         </div>
                       </div>
                       <div class="d-flex align-items-center gap-3">
-                       <div class="task-left-border"></div>
+                        <div class="task-left-border"></div>
                         <div>
                           <h6 id="transaction-title">Fitness Training</h6>
                           <p id="transaction-time">02:00 PM - 03:00 PM</p>
                         </div>
                       </div>
                       <div class="d-flex align-items-center gap-3">
-                       <div class="task-left-border"></div>
+                        <div class="task-left-border"></div>
                         <div>
                           <h6 id="transaction-title">Reading time</h6>
                           <p id="transaction-time">03:00 PM - 04:00 PM</p>
                         </div>
                       </div>
-
+                    </div>
+                    <div class="text-end">
+                      <a
+                        href="#"
+                        class="transaction-viewmore text-end tasks-viewmore"
+                      >
+                        <span class="mb-0 me-2">View all Tasks</span>
+                        <img src="assets/images/viewmoreArrow.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div class="text-end"><a href="#" class="transaction-viewmore text-end tasks-viewmore">
-                  <span class="mb-0 me-2">View all Tasks</span>
-                  <img src="assets/images/viewmoreArrow.png" alt="">
-                </a></div>
+              </div>
             </div>
-</div>
-</div>
-</div>
-<!-- --MAIN TAB 1 IS OVER ----->
+            <!-- --MAIN TAB 1 IS OVER ----->
 
-<!-- --MAIN TAB 2 START FROM HERE ----->
-  <!-- <div class="main-tab-2" id="mainTabTwo">
-    code here...
-  </div> -->
+            <!-- --MAIN TAB 2 START FROM HERE ----->
+            <div class="main-tab-2" id="earningsTab">
+              <h1>TAB 2</h1>
+            </div>
+            <!-- --MAIN TAB 2 ENDS HERE ----->
+
+            <div class="main-tab-3" id="activityTab">
+              <div class="row p-0 m-0">
+                <div class="col-md-8 col-12 mb-3">
+                  <div class="balance-chart">
+                    <div
+                      class="header d-flex justify-content-between align-items-center mb-4"
+                    >
+                      <div
+                        class="d-flex align-items-center flex-column flex-sm-row"
+                      >
+                        <h3 class="mb-0 me-2">Balance</h3>
+                        <div class="d-flex align-items-center gap-1">
+                          <img src="assets/images/greenTick.svg" alt="" />
+                          <span>On track</span>
+                        </div>
+                      </div>
+                      <select id="timeRange" class="form-select w-auto">
+                        <option value="monthly" selected>Monthly</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="today">Today</option>
+                        <option value="year">This Year</option>
+                        <option value="lifetime">Lifetime</option>
+                      </select>
+                    </div>
+
+                    <div class="row mb-4 gap-3 gap-md-0">
+                      <div class="col-md-6">
+                        <div class="stat-box">
+                          <p class="stat-label">Saves</p>
+                          <div class="d-flex align-items-center gap-3">
+                            <div class="stat-value" id="savesValue">
+                              43.50%
+                            </div>
+                            <span id="savesChange" class="save-color"
+                              >+2.45%</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="stat-box">
+                          <p class="stat-label">Balance</p>
+                          <div class="d-flex align-items-center gap-3">
+                            <div class="stat-value" id="balanceValue">
+                              $52,422
+                            </div>
+                            <span id="balanceChange" class="loss-color"
+                              >-4.75%</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="balance-chart-wrapper">
+                      <canvas id="balanceChart"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                  <div class="transfers-card d-flex flex-column">
+                    <h5 class="heading">Your transactions</h5>
+                    <div class="transfer-list">
+                      <div class="d-flex align-items-center gap-3">
+                        <div class="transfers-logo">
+                          <img src="assets/images/userfpf2.png" alt="" />
+                        </div>
+                        <div>
+                          <h6 id="transferer-name">From Alex Manda</h6>
+                          <p id="transfer-time">Today, 16:36</p>
+                        </div>
+                        <span class="transfer-amount recieved">+50</span>
+                      </div>
+                      <div class="d-flex align-items-center gap-3">
+                        <div class="transfers-logo">
+                          <img src="assets/images/userpfp3.png" alt="" />
+                        </div>
+                        <div>
+                          <h6 id="transferer-name">To Laura Santos</h6>
+                          <p id="transfer-time">Today, 08:49</p>
+                        </div>
+                        <span class="transfer-amount sent">-27</span>
+                      </div>
+                      <div class="d-flex align-items-center gap-3">
+                        <div class="transfers-logo">
+                          <img src="assets/images/userpfp4.png" alt="" />
+                        </div>
+                        <div>
+                          <h6 id="transferer-name">From Jadon S.</h6>
+                          <p id="transfer-time">Yesterday, 14:36</p>
+                        </div>
+                        <span class="transfer-amount recieved">+157</span>
+                      </div>
+                         <div class="d-flex align-items-center gap-3">
+                        <div class="transfers-logo">
+                          <img src="assets/images/userfpf2.png" alt="" />
+                        </div>
+                        <div>
+                          <h6 id="transferer-name">From Alex Manda</h6>
+                          <p id="transfer-time">Today, 17:36</p>
+                        </div>
+                        <span class="transfer-amount recieved">+870</span>
+                      </div>
+                    </div>
+                    <div class="text-end">
+                      <a href="#" class="transfers-viewmore text-end">
+                        <span class="mb-0 me-2">View all</span>
+                        <img src="assets/images/viewmoreArrow.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-4 mb-3">
+                  <div class="small-transactions-card">
+                    <div class="credit-balance-div d-flex align-items-center position-relative justify-content-between">
+                      <div>
+                        <p class="mb-0">Credit Balance</p>
+                      <h5 class="mb-0">$25,215</h5>
+                    </div>
+                  <button style="border: none; background-color:transparent;align-self:flex-start"><img src="assets/images/threedotsIcon.svg" alt=""></button>
+                  <img src="assets/images/creditBalanceGraph.svg" alt="" class="graphImg">
+                      
+                    </div>
+                    <div class="recent-transactions">
+                      <p class="heading">Recent</p>
+                      <div class="transaction-list">
+                      <div class="d-flex align-items-center gap-3">
+                        <div class="transaction-logo">
+                          <img src="assets/images/billTaxes.svg" alt="" />
+                        </div>
+                        <div>
+                          <h6 id="transaction-name">Bill & Taxes</h6>
+                          <p id="transaction-time">Today, 16:36</p>
+                        </div>
+                        <span class="transaction-amount">-$154.50</span>
+                      </div>
+                        <div class="d-flex align-items-center gap-3">
+                        <div class="transaction-logo">
+                          <img src="assets/images/carEnergy.svg" alt="" />
+                        </div>
+                        <div>
+                          <h6 id="transaction-name">Car Energy</h6>
+                          <p id="transaction-time">23 Jun, 13:06</p>
+                        </div>
+                        <span class="transaction-amount">-$40.50</span>
+                      </div>
+                        <div class="d-flex align-items-center gap-3">
+                        <div class="transaction-logo">
+                          <img src="assets/images/DesignCourses.svg" alt="" />
+                        </div>
+                        <div>
+                          <h6 id="transaction-name">Design Course</h6>
+                          <p id="transaction-time">21 Jun, 19:04</p>
+                        </div>
+                        <span class="transaction-amount">-$70.00</span>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-8 mb-3">
+                  <div class="row m-0 h-100 try-venus-wrapper">
+                    <div class="col-md-6 order-1 order-md-0">
+                      <div class="try-venus-first-part h-100 d-flex justify-content-center flex-column">
+                      <h2>Try Venus for free now!</h2>
+                      <p>Enter in this creative world. Venus is the best product for your business.</p>
+                      <div class="button-wrapper">
+                        <button class="primary-btn">Try for free</button>
+                        <button class="skip-btn">Skip</button>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 order-0 order-md-1">
+                      <div class="try-venus-second-part h-100 d-flex align-items-center justify-content-center">
+                      <img src="assets/images/venusImg.png" alt="">
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
 
 
-<!-- --MAIN TAB 2 ENDS HERE ----->
-
- 
-
-
-
+              </div>
+            </div>
+          </div>
+          <!-- main layout End HEre div ends Here  -->
         </div>
-        <!-- main layout End HEre div ends Here  -->
-
+        <!-- Hero -main or Right Div end here  -->
       </div>
-       <!-- Hero -main or Right Div end here  -->
-    </div>
     </div>
 
     <!-- offline js files  -->
