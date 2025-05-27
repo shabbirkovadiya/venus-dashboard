@@ -238,6 +238,7 @@
   height: 100%;
   flex-wrap: wrap;
   position: relative;
+  cursor: pointer;
 }
 .small-data p {
   font-family: "dms-medium";
@@ -601,13 +602,13 @@
   display: block;
   margin-left: auto;
 }
-.transfers-card .recieved{
-color: var(--light-green);
-background-color: #05cd991a;
+.transfers-card .recieved {
+  color: var(--light-green);
+  background-color: #05cd991a;
 }
-.transfers-card .sent{
-  color: #EE5D50;
-  background-color: #EE5D501A;
+.transfers-card .sent {
+  color: #ee5d50;
+  background-color: #ee5d501a;
 }
 .transfers-viewmore {
   font-family: "dms-bold";
@@ -698,10 +699,10 @@ background-color: #05cd991a;
   margin-left: auto;
   color: var(--grey900);
 }
-.try-venus-wrapper{
+.try-venus-wrapper {
   background-color: var(--white-color);
   border-radius: 20px;
-padding: 15px 0;
+  padding: 15px 0;
 }
 .try-venus-first-part h2 {
   color: var(--grey900);
@@ -727,26 +728,200 @@ padding: 15px 0;
   font-size: 14px;
   margin-right: 30px;
   border: 1px solid transparent;
-  transition: .3s ease-in-out;
-&:hover{
-  background-color: transparent;
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color);
+  transition: 0.3s ease-in-out;
+  &:hover {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+  }
 }
-}
-.try-venus-first-part .skip-btn{
+.try-venus-first-part .skip-btn {
   border: none;
   background: none;
   color: var(--grey600);
   font-family: "dms-medium";
-font-weight: 500;
-font-size: 16px;
+  font-weight: 500;
+  font-size: 16px;
 }
 .try-venus-second-part img {
   width: 80%;
   height: 286px;
   border-radius: 20px;
   box-shadow: 0px 0px 3px #aaa;
+}
+/* ----------------------Main Tab 3 css started --------------------  */
+.cards-div {
+  border-radius: 20px;
+  background-color: var(--white-color);
+  padding: 40px 40px 20px 30px;
+  height: 100%;
+}
+.cards-div .card-first-part h2 {
+  color: var(--grey900);
+  font-family: "dms-bold";
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 17px;
+}
+.cards-div .card-first-part p {
+  font-family: "dms-medium";
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--grey600)
+}
+.card-first-part .primary-btn {
+  border: none;
+  border-radius: 70px;
+  padding: 10px 40px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-family: "dms-medium";
+  font-weight: 500;
+  font-size: 14px;
+  margin-right: 30px;
+  border: 1px solid transparent;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+  }
+}
+.card-second-part{
+  justify-content: center !important;
+}
+.cards-second-part img{
+  width: 100%;
+height: 285px;
+}
+.secure-card{
+  padding: 25px;
+  background-color: var(--white-color);
+  border-radius: 20px;
+  height: 100%;
+}
+.secure-card .heading img{
+  height: 90px;
+  width: 90px;
+  text-align: left;
+  margin-bottom: 17px;
+}
+.secure-card h3{
+  color: var(--grey900);
+  font-family: "dms-bold";
+font-weight: 700;
+font-size: 24px;
+}
+.secure-card p{
+  color: var(--grey600);
+  font-family: "dms-medium";
+font-weight: 500;
+font-size: 14px;
+margin-bottom: 20px;
+}
+.secure-card button{
+  padding: 10px;
+  border: 1px solid transparent;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-family: "dms-medium";
+font-weight: 500;
+font-size: 14px;
+border-radius: 70px;
+transition: .5s ease-in-out;
+&:hover{
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+}
+}
+.earning-chart-div{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 100%;
+border-radius: 20px;
+background-color: var(--white-color);
+}
+.earning-chart-div button{
+height: 32px;
+width: 32px;
+align-self: self-end;
+border: none;
+background-color: var(--grey300);
+border-radius: 7px;
+margin-top: 20px;
+margin-right: 20px;
+}
+.earning-chart-div .earnings-label{
+  font-family: "dms-medium";
+font-weight: 500;
+font-size: 14px;
+color: var(--grey600);
+margin-bottom: 3px;
+}
+.earning-chart-div h3{
+color: var(--grey900);
+font-family: "dms-bold";
+font-weight: 700;
+font-size: 34px;
+margin-bottom: 15px;
+}
+.earning-chart-div span{
+  font-family: "dms-bold";
+font-weight: 700;
+font-size: 12px;
+color: var(--light-green);
+background-color: #05CD991A;
+padding: 2px 8px;
+border-radius: 58px;
+}
+.earning-chart-div #earningsChart{
+  max-height: 150px;
+  margin-bottom: 20px;
+}
+/* =========================== TAB 4 Only For Fun ===============================  */
+#nullTab{
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sk-wrapper {
+  color: green;
+  font-family: Monaco, monospace;
+  font-size: 24px;
+  animation: 120ms infinite normal blinkText;
+}
+
+#sk-wrapper span {
+  animation: 1.5s infinite normal blinkTwo;
+}
+@keyframes blinkText {
+  0% {
+    opacity: 0;
+    left: 0;
+  }
+  40%,
+  80% {
+    opacity: 1;
+    left: -2px;
+  }
+}
+
+@keyframes blinktwo {
+  0% {
+    opacity: 0;
+    left: 0;
+  }
+  40% {
+    opacity: 0;
+    left: -2px;
+  }
+  80% {
+    opacity: 1;
+    left: -2px;
+  }
 }
 
 /* =====MAin  Section  End ===== */

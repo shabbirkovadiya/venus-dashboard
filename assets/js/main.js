@@ -20,7 +20,8 @@ document.addEventListener('click', (event) => {
   const tabs = {
     spentThisMonth: 'SpentMonthTab',
     earning: 'earningsTab',
-    activity: 'activityTab'
+    activity: 'activityTab',
+    newClients:'nullTab'
   };
 
   function showTabForBox(clickedBox) {
@@ -345,3 +346,63 @@ document.getElementById('timeRange').addEventListener('change', function () {
   savesChangeEl.classList.remove('save-color', 'loss-color');
   savesChangeEl.classList.add(data.savesChange.startsWith('+') ? 'save-color' : 'loss-color');
 });
+
+////---- Earning Chart on TAb 2----
+  const ctx4 = document.getElementById('earningsChart').getContext('2d');
+
+  // Gradient background fill for the chart
+  const gradient = ctx4.createLinearGradient(0, 0, 0, 100);
+  gradient.addColorStop(0, 'rgba(99,102,241,0.4)');
+  gradient.addColorStop(1, 'rgba(255,255,255,0)');
+
+  new Chart(ctx4, {
+    type: 'line',
+    data: {
+      labels: ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Day 6', 'Day 7', 'Day 8', 'Day 9', 'Day 10'],
+      datasets: [{
+        label: 'Earnings',
+        data: [3, 5, 2, 6, 5, 8, 6, 5, 7, 6],
+        fill: true,
+        backgroundColor: gradient,
+        borderColor: '#6366f1',
+        tension: 0.4,
+        pointRadius: 0,
+        pointHoverRadius: 6,
+        borderWidth: 3
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      layout: {
+        padding: {
+          top: 10 ,// ✅ Fix for top point being cut off
+          bottom: 10
+        }
+      },
+      scales: {
+        x: { display: false },
+        y: { display: false }
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          enabled: true,
+          backgroundColor: '#111827',
+          titleFont: { size: 12 },
+          bodyFont: { size: 14 },
+          padding: 8,
+          cornerRadius: 6,
+          callbacks: {
+            label: function(context) {
+              return `$${context.parsed.y.toFixed(2)}`;
+            }
+          }
+        }
+      },
+      interaction: {
+        mode: 'nearest',
+        intersect: false
+      }
+    }
+  });

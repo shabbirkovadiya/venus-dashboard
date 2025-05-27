@@ -48,6 +48,22 @@
   height: 200px !important;
   
 }
+.cards-div {
+  padding: 30px 30px 20px 25px !important;
+}
+.cards-div .card-first-part h2 {
+  font-size: 30px !important;
+  margin-bottom: 15px !important;
+}
+.cards-div .card-first-part p {
+  font-size: 15px !important;
+}
+
+.cards-second-part img{
+  width: 100% !important;
+height: 260px !important;
+}
+
   /*?  B - 992px to 1200px   lg :- (Desktops, Laptops, Large Tablets)  ?*/
 }
 
@@ -126,7 +142,20 @@ font-size: 14px !important;
   aspect-ratio: 1;
   margin-bottom: 20px;
 }
+.cards-div {
+  padding: 20px 20px 15px 18px !important;
+}
+.cards-div .card-first-part h2 {
+  font-size: 25px !important;
+}
+.cards-div .card-first-part p {
+  font-size: 13px !important;
+}
 
+.cards-second-part img{
+  width: 80% !important;
+height: 230px !important;
+}
 
   /*?  768px to 992px   md :- (Tablets and small desktops)  ?*/
 }
